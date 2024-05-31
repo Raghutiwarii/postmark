@@ -246,7 +246,7 @@ func ValidateTemplate(apiToken string, template Template) error {
 }
 
 func main() {
-	apiToken := 'YOUR_SEREVE_KEY'
+	apiToken := 'YOUR_SERVER_KEY'
 
 	// Creating a template
 	// template := Template{
