@@ -246,9 +246,9 @@ func ValidateTemplate(apiToken string, template Template) error {
 }
 
 func main() {
-	apiToken := "3cfe2f4a-8e58-4055-8c56-b4f690bbf9c1"
+	apiToken := 'YOUR_SEREVE_KEY'
 
-	// Example of creating a template
+	// Creating a template
 	// template := Template{
 	// 	Name:     "Password Reset",
 	// 	Subject:  "Reset your password",
@@ -262,14 +262,14 @@ func main() {
 	// }
 	// fmt.Printf("Template created with ID: %d\n", templateID)
 
-	// Example of getting a template
+	// Getting a template
 	// retrievedTemplate, err := GetTemplate(apiToken, templateID)
 	// if err != nil {
 	// 	log.Fatalf("Error getting template: %v\n", err)
 	// }
 	// fmt.Printf("Retrieved Template: %+v\n", retrievedTemplate)
 
-	// Example of updating a template
+	// Updating a template
 	// retrievedTemplate.Subject = "Updated Subject"
 	// err = UpdateTemplate(apiToken, *retrievedTemplate)
 	// if err != nil {
@@ -277,7 +277,7 @@ func main() {
 	// }
 	// fmt.Println("Template updated successfully")
 
-	// Example of listing templates
+	// Listing templates
 	fmt.Println("before deleting template id 36087615")
 	offset := 0
 	count := 10
@@ -306,7 +306,7 @@ func main() {
 		fmt.Printf("ID: %d, Name: %s, Active: %t, Subject: %s\n", t.TemplateID, t.Name, t.Active, t.Subject)
 	}
 
-	// Example of validating a template
+	// validating a template
 	// err = ValidateTemplate(apiToken, template)
 	// if err != nil {
 	//     log.Fatalf("Error validating template: %v\n", err)
